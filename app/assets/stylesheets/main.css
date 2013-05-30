@@ -10,7 +10,7 @@ a:hover{
 	color:#EE3C1F;
 	text-decoration:none;
 }
-#top-bar{	
+#top-bar{
 	padding:0;
 	text-transform: uppercase;
 	font-size:11px;
@@ -26,7 +26,7 @@ a:hover{
 	text-transform: uppercase;
 	font-weight:bold;
 	font-size: 14px;
-	height:20px;	
+	height:20px;
 }
 #nav li.open a{
 	text-shadow: 0 1px 0 #fff;
@@ -49,7 +49,7 @@ a:hover{
 .logo img{
 	margin:25px 0
 }
-#myTab.home a,h2.title{	
+#myTab.home a,h2.title{
 	font-size:16px;
 }
 #myTab li.active a{
@@ -81,12 +81,12 @@ a:hover{
 footer{
 	background:url(../img/bg_page.jpg);
 }
-footer h4 {	
+footer h4 {
 	font-family: 'Lekton',sans-serif;
 	font-size: 14px;
 	font-weight:bold;
 	text-transform: uppercase;
-	color: #8B8B8B;	
+	color: #8B8B8B;
 	margin: 0 0 5px 0;
 }
 footer ul{
@@ -128,7 +128,7 @@ footer div.company_info{
 	min-height:230px;
 	background-color:#fff;
 }
-.listing-products li .product-box{	
+.listing-products li .product-box{
 	min-height:270px;
 	padding:0 8px;
 	border:1px solid #eee;
