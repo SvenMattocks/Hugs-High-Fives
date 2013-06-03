@@ -37,6 +37,7 @@
 				</div>
 			</div>
             <!-- Start Header-->
+
             <div class="row show-grid">
                 <div class="span3 logo">
                     <a href="index.html">
@@ -45,8 +46,21 @@
                 </div>
                 <div class="span5 offset4">
 					<div class="row">
-						<div class="span3"><div class="account"><a href="#myModal" role="button" data-toggle="modal">YOUR ACCOUNT</a><br/>Welcome Michael Jordan</div></div>
-						<div class="span2"><div class="cart"><a href="cart.html">SHOPPING CART</a><br/>2 items</div></div>
+
+						<div class="span3"><div class="account">
+
+      <% if session["user_id"].present? %>
+        <!--Hello, <%= User.find_by_id(session["user_id"]).name %>!-->
+        <%= link_to "Sign Out", "/logout" %>
+      <% else %>
+              <a <%= link_to "Sign Up", "/users/new"%> </a><a <%= link_to "Login", "/login"%>
+      <% end %>
+
+      <div class="notice"><%= notice %></div>
+
+             <!-- href="#myModal" role="button" data-toggle="modal">Login</a> --> </div></div>
+
+            <div class="span2"><div class="cart"><a href="cart.html">SHOPPING CART</a><br/>2 items</div></div>
 					</div>
                 </div>
             </div>
