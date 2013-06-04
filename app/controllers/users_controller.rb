@@ -18,9 +18,10 @@ class UsersController < ApplicationController
     @user.password = params[:password]
 
     if @user.save
+      session["user_id"] = @user.id
       redirect_to "/home"
     else
-      render 'new'
+      redirect_to '/users', notice: "Username taken"
     end
   end
 
@@ -28,17 +29,18 @@ class UsersController < ApplicationController
     @user = User.find_by_id(params[:id])
   end
 
-  def update
-    @user = User.find_by_id(params[:id])
-    @user.name = params[:name]
-    @user.password = params[:password]
+  # def update
+  #   @user = User.find_by_id(params[:id])
+  #   @user.name = params[:name]
+  #   @user.password = params[:password]
 
-    if @user.save
-      redirect_to users_url
-    else
-      render 'new'
-    end
-  end
+  #   if @user.save
+  #     redirect_to users_url
+  #   else
+  #     render 'new'
+
+  #   end
+  # end
 
   def destroy
     @user = User.find_by_id(params[:id])

@@ -16,6 +16,5 @@ class SessionsController < ApplicationController
     else
       redirect_to "/login", notice: "Unknown username or password."
     end
-
   end
 end
