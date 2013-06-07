@@ -41,7 +41,7 @@
             <div class="row show-grid">
                 <div class="span3 logo">
                     <a href="index.html">
-                        <img alt="" src ="app/assets/images/products/michael-jordan-first-trophy.jpg" />
+                        <img alt="" src ="borat-high-five.jpg" />
                     </a>
                 </div>
                 <div class="span5 offset4">
@@ -79,7 +79,7 @@
                                             <ul class="dropdown-menu">
                                                 <li><a href="products.html">Nullam semper elementum</a></li>
                                                 <li class="divider"></li>
-                                                <li><a href="products.html">Phasellus ultricies</a></li>
+                                                <li><a href="products.html">Michael Jordan NBA Trophy Hug</a></li>
 												<li class="divider"></li>
 												<li><a href="products.html">Donec laoreet dui</a></li>
                                             </ul>
@@ -108,7 +108,8 @@
                     <div id="myCarousel" class="carousel slide home">
                         <div class="carousel-inner">
                             <div class="item active">
-                                <img alt="" src="michael-jordan-first-trophy.jpg" />
+                                <!--<img alt="" src="borat-high-five.jpg" />-->
+                                <%= image_tag("Sacha Baron Cohen.jpg")%>
                                 <div class="carousel-caption">
                                     <h4>Slide Image 1</h4>
                                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
@@ -142,9 +143,14 @@
 									<ul class="thumbnails listing-products">
 										<li class="span3">
 											<div class="product-box">
-												<a href="product_detail.html"><h4>Fusce id molestie massa</h4></a>
-												<a href="product_detail.html"><img alt="" src="img/products/m2.jpg" /></a>
-												<p>Phasellus consequat sem congue diam congue</p>
+												<!--<a href="product_detail.html"><h4></h4></a>-->
+                        <% @products.each do |product| %>
+                        <%= #link_to product.name, {}"/products/#{product.id}" %>
+                        <%= image_tag("180px-MJFinals.jpg") %>
+                        <% end %>
+
+												<!--<a href="product_detail.html"><img alt="" src="images/product180px-MJFinals.jpg" /></a>-->
+												<p>Blood, sweat, and tears.  Watch the greatest hoops player to live and follow his lead after you win the IM football championship.</p>
 												<div class="bottom">
 													<a class="view" href="product_detail.html">view</a> / <a class="addcart" href="cart.html">add to cart</a>
 												</div>
@@ -152,9 +158,9 @@
 										</li>
 										<li class="span3">
 											<div class="product-box">
-												<a href="product_detail.html"><h4>Praesent tempor sem sodales</h4></a>
+												<a href="product_detail.html"><h4>Wayne Gretzky 810th Goal Celebration Hug</h4></a>
 												<a href="product_detail.html"><img alt="" src="img/products/m3.jpg" /></a>
-												<p>Integer in ligula et erat gravida placerat</p>
+												<p>The Great One. 'nough said.</p>
 												<div class="bottom">
 													<a class="view" href="product_detail.html">view</a> / <a class="addcart" href="cart.html">add to cart</a>
 												</div>
@@ -162,9 +168,9 @@
 										</li>
 										<li class="span3">
 											<div class="product-box">
-												<a href="product_detail.html"><h4>Luctus quam ultrices rutrum</h4></a>
+												<a href="product_detail.html"><h4>Early Morning Jacobs High Five</h4></a>
 												<a href="product_detail.html"><img alt="" src="img/products/m4.jpg" /></a>
-												<p>Suspendisse aliquet orci et nisl iaculis</p>
+												<p>This high five is sure to kick your day off to a great start.  Give this high five to one of your classmates and share the love.</p>
 												<div class="bottom">
 													<a class="view" href="product_detail.html">view</a> / <a class="addcart" href="cart.html">add to cart</a>
 												</div>
@@ -172,9 +178,9 @@
 										</li>
 										<li class="span3">
 											<div class="product-box">
-												<a href="product_detail.html"><h4>Praesent tempor sem sodales</h4></a>
+												<a href="product_detail.html"><h4>Five drinks deep JTs Bro Hug</h4></a>
 												<a href="product_detail.html"><img alt="" src="img/products/m5.jpg" /></a>
-												<p>Nam imperdiet urna nec lectus mollis</p>
+												<p>Let's be honest.  We love each other.  Bro Hugs are the best.</p>
 												<div class="bottom">
 													<a class="view" href="product_detail.html">view</a> / <a class="addcart" href="cart.html">add to cart</a>
 												</div>
@@ -306,7 +312,7 @@
                 <div class="row">
                     <div class="span3">
 						<div class="company_info">
-							<h4 class="logo-title"><span>BITSY</span>SHOP</h4>
+							<h4 class="logo-title"><span>HUGS 'N </span>HIGH FIVES</h4>
 							<p>
 								2001 Sheridan Road<br/>
 								Evanston, Illinois, USA<br/>

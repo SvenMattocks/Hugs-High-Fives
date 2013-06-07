@@ -17,5 +17,6 @@ get '/users/:id', controller: 'users', action: 'show', as: 'user'
 
 get "/home", controller: 'homes', action: 'index'
 get "/products", controller: 'products', action: 'index'
+get "/product_detail.html", controller: 'products', action: 'show'
 
 end
